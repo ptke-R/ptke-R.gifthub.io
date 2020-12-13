@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+  *{
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: black;
+  }
+  /*--Header/BLog Tittle */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+
+  }
+  .header h1 {
+    font-size: 50px;
+
+  }
+  /* Style the top navightion bar */
+  .topnav {
+    overflow: hidden; /*visible,scroll,auto*/
+    background-color: #333;
+  }
+  /*Style the topnav Links */
+  .topnav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 12px;
+    text-decoration: none;
+  }
+
+  /*Change color on hover */
+  .topnav a:hover {
+    background-color: yellow;
+    color: black;
+  }
+
+  /* Create two unequal colums that floats next to each other */
+  /* left colums */
+  .leftcolumn{
+    float: left;
+    width: 75%;
+  }
+  /* Right colums */
+  .rightcolumn{
+    float: left;
+    width: 25%;
+    background-color: black;
+    padding-left: 20px;
+  }
+  /* Fake image */
+  .fakeimg {
+
+    width: 100%;
+    padding: 20px;
+  }
+  /* Add a card eggect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  /* Clear floats after the colums: 컬럼다음에 float 해제*/
+  .row:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Footer*/
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: 20px;
+    }
+    /* Responsive Layout - when the screen is less than 800px wide,
+    make the two columns stack on top of each other instead of next each other */
+    @media screen and (max-width: 800px) {
+      .leftcolumn,.rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    /* Responsive Layout - when the screen is Less than 400px wide,
+    make the navigation Links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+  </style>
+
+<body>
+  <div class="header">
+    <h1> My GAME World</h1>
+    <p>저의 게임세계에 오신것을 환영합니다!!</p>
+
+  </div>
+
+  <div class="topnav">
+    <a href="#"> <a href="file:///C:/aaa/index.html">리그 오브 레전드</a>
+    <a href="#"> <a href="file:///C:/aaa/index2.html">GTA5</a>
+    <a href="#"> <a href="file:///C:/aaa/index3.html">DOOM</a>
+    <a href="#>" style="float:right">GTA5</a>
+
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>GTA5는 뭐죠?</h2>
+        <h5>GTA5의 정의</h5>
+        <div class="fakeimg" style="height:500px;">
+          <img src="gta5.jpg">
+        </div>
+
+        <p> 어느 날 문득, 동네 건달과 은퇴한 은행 강도, 미치광이 사이코패스는 자신들이 어두운 범죄 세계와 미국 정부 기관,
+          엔터테인먼트 회사의 가장 끔찍하고 무시무시한 현실과 복잡하게 얽혀 있다는 걸 깨닫습니다.
+          아무도 믿을 수 없는, 서로조차 믿을 수 없는 이 무자비한 도시에서 살아남기 위해 그들은 여러 번의 위험한 습격에 몸을 던져야 합니다.라는 스토리</p>
+        </div>
+
+
+<div class="card">
+  <h2> 이 게임에선 뭘 할 수있죠?</h2>
+  <h5> 그냥 전부 다 할 수 있습니다.</h5>
+    <div class="fakeimg" style="height: 200px;">
+
+
+      <img src="car.png">
+      <img src="fit.jpg">
+      <img src="lol.jpg">
+      <img src="gogogo.jpeg">
+      <img src="cagino.jpeg">
+      <img src="wow.png">
+
+     </div>
+    <p>차를 사거나 운동을 즐기거나 색다른 걸 하거나 훔치거나 카지노를 즐기고 복장을 즐길 수 있습니다. 이외에도 더 많을 것을 즐길 수 있습니다. </p>
+
+       </div>
+
+</div>
+
+            <div class="rightcolumn">
+              <div class="card">
+                <h2>도전과제</h2>
+                  <div class="fakeimg" style="height:230px;">
+                <img src="ah.png"></div>
+                <p>74개의 도전과제가 있으며 이걸 깨려면 1000시간을 플레이해야한다.</p>
+              </div>
+
+              <div class="card">
+                <h3>게임의 장단점</h3>
+                <div class="fakeimg"><p>장점</p><p> 자유도가 높으며 여러가지 체험하며 즐길거리가 많고 2015년 그래픽치곤 너무 좋다.</a></div>
+                <div class="fakeimg"><p>단점</p><p> 돈모으기 힘들고 핵쟁이가 날 뛰고 고인물들이 막 들어온 뉴비들을 마구 죽이며 재미가 없어짐.</div>
+
+              </div>
+              <div class="card">
+                <h3>social club</h3>
+                <p>PKYE RC4</p>
+              </div>
+      </div>
+                </div><!--class=row 는 cloumn다음에 float 해체시키는 css가 있으므로 footer전에 flat해제를 css에 넣어 놓은것임 크으으.. 역시 교수님-->
+                <div class="footer">
+                  <h2>whj11200@naver.com</h2>
+                </div>
+      </body>
+      </html>

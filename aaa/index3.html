@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+  *{
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: black;
+  }
+  /*--Header/BLog Tittle */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: RED;
+
+  }
+  .header h1 {
+    font-size: 50px;
+
+  }
+  /* Style the top navightion bar */
+  .topnav {
+    overflow: hidden; /*visible,scroll,auto*/
+    background-color: #333;
+  }
+  /*Style the topnav Links */
+  .topnav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 12px;
+    text-decoration: none;
+  }
+
+  /*Change color on hover */
+  .topnav a:hover {
+    background-color: red;
+    color: black;
+  }
+
+  /* Create two unequal colums that floats next to each other */
+  /* left colums */
+  .leftcolumn{
+    float: left;
+    width: 75%;
+  }
+  /* Right colums */
+  .rightcolumn{
+    float: left;
+    width: 25%;
+    background-color: black;
+    padding-left: 20px;
+  }
+  /* Fake image */
+  .fakeimg {
+
+    width: 100%;
+    padding: 20px;
+  }
+  /* Add a card eggect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  /* Clear floats after the colums: 컬럼다음에 float 해제*/
+  .row:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Footer*/
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: 20px;
+    }
+    /* Responsive Layout - when the screen is less than 800px wide,
+    make the two columns stack on top of each other instead of next each other */
+    @media screen and (max-width: 800px) {
+      .leftcolumn,.rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    /* Responsive Layout - when the screen is Less than 400px wide,
+    make the navigation Links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+  </style>
+
+<body>
+  <div class="header">
+    <h1> My GAME World</h1>
+    <p>저의 게임세계에 오신것을 환영합니다!!</p>
+
+  </div>
+
+  <div class="topnav">
+    <a href="#"> <a href="file:///C:/aaa/index.html">리그 오브 레전드</a>
+    <a href="#"> <a href="file:///C:/aaa/index2.html">GTA5</a>
+    <a href="#"> <a href="file:///C:/aaa/index3.html">DOOM</a>
+    <a href="#>" style="float:right">DOOM</a>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>DOOM는 뭐죠?</h2>
+        <h5>DOOM의 정의</h5>
+        <div class="fakeimg" style="height:400px;">
+          <img src="DOOM.jpg">
+        </div>
+
+        <p> 이드 소프트웨어가 개발하고 베데스다 소프트웍스에서 유통하는 둠(2016)의 후속작입니다.</p>
+          <p>Raze Hell.</p>
+          <p>지옥을 박살내라</p>
+        </div>
+
+
+<div class="card">
+  <h2> 악마 소개</h2>
+
+    <div class="fakeimg" style="height: 200px;">
+
+
+      <img src="zoom.jpeg">
+      <img src="imp.jpeg">
+      <img src="maker.jpeg">
+      <img src="mother.jpeg">
+      <img src="wtf.jpeg">
+      <img src="oh.jpeg">
+
+     </div>
+    <p> 전편만 해도 악마를 찢고 뜯고 쏘는 게임지만 후속작에선 천사들도 악마에게 부패되어 둠슬레이어에게 대항한다.</p>
+       </div>
+
+</div>
+
+            <div class="rightcolumn">
+              <div class="card">
+                <h2>도전과제</h2>
+                <div class="fakeimg" style="height:230px;">
+                <img src="ee.png"></div>
+                <p>40개지만 그 40개 깨기가 어렵다..</p>
+              </div>
+
+              <div class="card">
+                <h3>후기</h3>
+                <div class="fakeimg"><P>유의사항: 잔인하다 심약자 주의, 하이퍼 FPS여서 어지러움 증세가 있음</P></div>
+                <div class="fakeimg"><p>만일 자신이 상남자라면 이게임을 추천함</p></div>
+                <div class="fakeimg"><p> 둠슬레이어에겐 오직 이생각만 한다 악마를 찢어 죽인다 와 지옥을 파괴한다</p></div>
+              </div>
+              <div class="card">
+                <h3>기타 커뮤니티</h3>
+                <p>없음</p>
+              </div>
+      </div>
+                </div><!--class=row 는 cloumn다음에 float 해체시키는 css가 있으므로 footer전에 flat해제를 css에 넣어 놓은것임 크으으.. 역시 교수님-->
+                <div class="footer">
+                  <h2>whj11200@naver.com</h2>
+                </div>
+      </body>
+      </html>
